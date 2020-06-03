@@ -22,7 +22,8 @@
     "airport",
     "typescript",
     "timezone",
-    "offset"
+    "offset",
+    "location"
   ],
   "author": "Tomohiro Akutsu",
   "license": "MIT",
