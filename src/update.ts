@@ -24,6 +24,7 @@ const fetchAndWrite = async (): Promise<void> => {
               time: {
                 timezone: airport.timezone,
                 gmt: parseInt(airport.gmt_offset),
+                dst: parseInt(airport.dst_offset),
               },
               location: {
                 latitude: airport.latitude,
