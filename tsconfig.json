@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "lib": [
+      "es2019"
+    ],
+    "strict": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "pretty": false,
+    "newLine": "lf",
+    "outDir": "dist",
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true
+  },
+  "includes": [
+    "src/index.ts",
+    "src/airport-list.json"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules",
+    "__tests__",
+    "src/update.ts"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "includes": [
+    "src/**/*.ts",
+    "src/airport-list.json"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "__tests__"
+  ],
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true
+  }
+}
