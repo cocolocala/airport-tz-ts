@@ -15,6 +15,7 @@ describe('AirportTzTs', () => {
       time: {
         timezone: 'Asia/Tokyo',
         gmt: 9,
+        dst: 9,
       },
       location: {
         latitude: '35.76472',

@@ -13,6 +13,7 @@ type Country = {
 type Time = {
   timezone: string;
   gmt: number;
+  dst: number;
 };
 type Location = {
   latitude: string;
