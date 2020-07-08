@@ -1,5 +1,6 @@
 package-lock.json
 node_modules/
 __tests__/
-dist/
+dist-cjs/
+dist-esm/
 gulpfiile.js
