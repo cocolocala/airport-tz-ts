@@ -1,17 +1,17 @@
 {
-  "name": "airport-tz-ts",
-  "version": "1.0.1",
+  "name": "@cocolocala/airport-tz-ts",
+  "version": "1.0.2-alpha3",
   "description": "Get airport timezone, offset and location by airport code.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "main": "dist-cjs/index.js",
+  "module": "dist-esm/index.js",
+  "types": "dist-cjs/index.d.ts",
   "engines": {
-    "node": ">=12"
+    "node": ">=8"
   },
   "scripts": {
-    "build": "npm run lint && rm -rf dist && tsc && gulp",
+    "build": "npm run build:cjs && npm run build:esm",
+    "build:cjs": "rm -rf dist-cjs && tsc --project . --module commonjs --outDir ./dist-cjs",
+    "build:esm": "rm -rf dist-esm && tsc --project . --module es2015 --outDir ./dist-esm",
     "format": "eslint --fix --ext .ts . && echo 'format complete.'",
     "lint": "eslint --ext .ts . && echo 'lint complete.'",
     "prepublishOnly": "npm run build",
@@ -25,7 +25,7 @@
     "offset",
     "location"
   ],
-  "author": "Tomohiro Akutsu",
+  "author": "cocolocala",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^25.2.3",

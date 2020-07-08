@@ -3,7 +3,7 @@ const uglify = require('gulp-uglify-es').default;
 
 gulp.task('default', () => {
   return gulp
-    .src('dist/**/*.js')
+    .src('dist-cjs/**/*.js')
     .pipe(uglify())
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('dist-cjs'));
 });
