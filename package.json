@@ -72,5 +72,8 @@
   },
   "volta": {
     "node": "14.21.3"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
