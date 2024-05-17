@@ -1,0 +1,23 @@
+<%= ENV['GIT_PR_RELEASE_TITLE'] %>
+<% pull_requests.each do |pr| -%>
+<%= pr.to_checklist_item %>
+<% end -%>
+
+- - - 
+## 事前準備
+リリース前に必ずやること
+
+### リリースノート
+コードフリーズ後にエンジニア以外でもリリースの内容がわかるように書く。
+リリースノートを書いた後に内容をPO確認してもらう。
+
+```
+:rocket: :moon: cocolocala-flight YYYY.MM.DD リリースしました :moon: :rocket:
+```
+
+- [ ] リリースノートのPO確認
+
+## あと片付け
+- [ ] tag打ち
+  - 例: `git tag -a 2021.01.28.0`
+- [ ] masterブランチへマージ
